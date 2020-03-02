@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Rate our services</title>
+          <meta charset="utf-8">
+          <meta name="description" content="">
+          <meta name="author" content="Omar Jajah">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+          <link href="style.css" rel="stylesheet">
+      </head>
+    <body>
+        <header>
+            <h1 id="title">Your feedback is important!</h1>
+            <p id="description">
+                Please fill the following form so we improve our services.<br />
+                Note that field with (*) is required.
+            </p>
+        </header>
+
+        <div id="seperator"></div>
+
+        <form id="survey-form">
+            <div class="control-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Jone Doe" required>
+            </div>
+            
+            <div class="control-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="jone@example.com" required>
+            </div>
+            <div class="control-group">
+                <label for="dropdown">How often do you use our sevices ?</label>
+                <select id="dropdown">
+                    <option>Always</option>
+                    <option>Rarely</option>
+                    <option>Never before</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Gender: </label>
+                <label> 
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" >
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="unspecified">
+                    Unspecified
+                </label>
+            </div>
+            <div class="control-group">
+                <label id="number-label" for="number">Your rating</label>
+                <input type="number" id="number" min="1" max="10" placeholder="10 is best">
+            </div>
+
+            <div class="control-group">
+                <label for="textarea">Please descibe your feedback in few words</label>
+                <textarea id="textarea " cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="control-group">
+                <label>
+                    <input type="checkbox" value="subsicrbe">
+                    Subsicribe to our newsletter
+                </label> 
+            </div>
+            <div class="control-group">
+                <label>
+                    <input type="checkbox" value="contacted">
+                    Would you like our team to contact you if needed ?
+                </label>
+            </div>
+            <div class="control-group">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        </script>
+    </body>
+</html>
